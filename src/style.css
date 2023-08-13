@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  background-color: #DCDCDC;
+}
+
+h2 {
+  color: #1a989c;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+h3 {
+  color: #1a989c;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+
+h4 {
+  font-size: 2em;
+}
+
+h6 {
+  font-size: 2em;
+  font-weight: 500;
+  color: #0f0f0f;
+}
+
+.header {
+  background-color: #ededed;
+  display: flex;
+  padding: 30px 30px;
+  padding-bottom: 30px;
+}
+.header h2 {
+  min-width: 300px;
+}
+.header .search {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+.header .search input {
+  width: 40%;
+  max-width: 300px;
+  height: 35px;
+  border: 1px solid black;
+  border-right: none;
+  background-color: #ffffff;
+  outline: 0;
+}
+.header .search .btn {
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-left: none;
+  width: 24px;
+  height: 35px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 10px;
+}
+.header .search .btn img {
+  width: 30px;
+  height: 25px;
+}
+
+.pre_header {
+  background-color: #3c3c3c;
+  display: flex;
+  padding: 0 30px;
+}
+.pre_header .btn {
+  color: #ffffff;
+  padding: 10px 25px;
+  border-bottom: 2px solid #3c3c3c;
+}
+.pre_header :first-child {
+  border-left: 1px solid #DCDCDC;
+  border-right: 1px solid #DCDCDC;
+}
+.pre_header .btn:hover {
+  border-bottom-color: #1a989c;
+}
+
+.main {
+  background-color: #DCDCDC;
+}
+.main .modal {
+  background-color: #ffffff;
+  margin: 24px 30px;
+  padding: 50px;
+  color: #696969;
+}
+.main .modal img {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+}
+.main .modal h4 {
+  margin-top: 90px;
+  text-align: center;
+}
+.main .top {
+  margin: 10px auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  width: 95%;
+  max-width: 1500px;
+}
+.main .top .title {
+  display: flex;
+}
+.main .top .title h3 {
+  width: 100%;
+}
+.main .top .title .date {
+  text-align: right;
+}
+.main .top .info {
+  width: 60%;
+  margin: 30px auto;
+  margin-top: 10px;
+  min-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main .top .info .ico {
+  position: relative;
+  width: 150px;
+  height: 150px;
+}
+.main .top .info .ico img {
+  width: 100%;
+}
+.main .top .info .ico p {
+  color: #696969;
+  position: absolute;
+  top: 110px;
+  left: 75px;
+  transform: translate(-50%);
+}
+.main .top .info .temp p {
+  font-size: 0.7em;
+  color: #696969;
+}
+.main .top .info .time_point div {
+  display: flex;
+}
+.main .top .info .time_point div p {
+  margin-right: 10px;
+  color: #696969;
+}
+.main .middle {
+  margin: 10px auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  width: 95%;
+  max-width: 1500px;
+  overflow: scroll;
+}
+.main .middle .info {
+  position: relative;
+}
+.main .middle .info .icons {
+  display: flex;
+  color: #0f0f0f;
+  text-align: center;
+  margin: 0;
+  margin-top: 20px;
+}
+.main .middle .info .icons img {
+  display: block;
+  margin: 0 auto;
+}
+.main .middle .info .icons h5 {
+  min-width: 200px;
+  width: 100%;
+}
+.main .middle .info .icons h5:first-child {
+  text-align: left;
+}
+.main .middle .info .content {
+  display: flex;
+}
+.main .middle .info .content .item {
+  width: 100%;
+  min-width: 200px;
+  text-align: center;
+}
+.main .middle .info .content .item p {
+  border-bottom: 1px solid #696969;
+}
+.main .middle .info .content .item:first-child {
+  text-align: left;
+  color: #696969;
+}
+.main .bottom {
+  margin: 10px auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  width: 95%;
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+.main .bottom div {
+  background-color: #ededed;
+  display: flex;
+}
+.main .bottom div p {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  padding: 0 40px;
+}
+.main .days_block {
+  margin: 10px auto;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  width: 95%;
+  max-width: 1500px;
+  display: flex;
+  background-color: #DCDCDC;
+  justify-content: space-around;
+}
+.main .days_block .item {
+  background-color: #ededed;
+  padding: 20px 0;
+  width: 19.5%;
+  text-align: center;
+}
+.main .days_block .item h5 {
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+.main .days_block :hover {
+  background-color: #ffffff;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+$general_color1: #ededed;
+$general_color2: #3c3c3c;
+$general_color3: #DCDCDC;
+$general_color4: #ffffff;
+
+$font_color1: #0f0f0f;
+$font_color2: #696969;
+$font_color3: #ffffff;
+
+$title_font_color: #1a989c;
+
+@mixin main_block{
+    margin: 10px auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: $general_color4;
+    width: 95%;
+    max-width: 1500px;
+}
